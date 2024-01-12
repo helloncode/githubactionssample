@@ -30,4 +30,5 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Check tag
-        run: echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
+        run: |
+          echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
